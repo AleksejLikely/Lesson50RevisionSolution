@@ -11,3 +11,32 @@
 // 
 // Далее необходимо разработать полноценный или тестовый проект для полной 
 // демонстрации работоспособности данной функции.
+
+#include "logic.h"
+using namespace std;
+
+bool is_same_elements(int array[], int size, int arithmetic_mean){
+	int num_1, num_2, num_3;
+	int d;
+
+	if (num_1 <= 1 || num_2 < 1 || num_3 < 1) {
+		return d == -1;
+	}
+
+	arithmetic_mean = (num_1 + num_2 + num_3) / 3;
+
+	if (num_1 < arithmetic_mean && arithmetic_mean < num_2 && arithmetic_mean < num_3){
+		return 0;
+	}
+	else {
+		return d == -1;
+	}
+
+	string s;
+
+	s = d == -1 ? "That's right" : "Error...Try again.";
+
+	return 0;
+}
+
+//Полностью не работает
